@@ -1,0 +1,23 @@
+ /* Breadcrum overridden css */
+:host /deep/ .breadcrumb {
+    background-color: #fff !important;
+  }
+
+:host /deep/ .breadcrumb-item a{
+    color: grey !important;
+}
+
+:host /deep/ .breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: white !important;
+    content: ">" !important;
+}
+
+:host /deep/ .breadcrumb-item {
+    font-weight: bolder !important;
+}
+
+:host /deep/ .breadcrumb-item.active {
+    font-weight: unset !important;
+}

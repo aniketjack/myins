@@ -49,9 +49,16 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/ngx-toastr/toastr.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -144,6 +151,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "my-inssurance"
+    }
+  },
+  "defaultProject": "my-inssurance",
+  "cli": {
+    "analytics": "60dbc7c7-0842-48b4-9067-7d1fd89277d3"
+  }
 }
