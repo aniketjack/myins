@@ -1,5 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face {
+  font-family: "Graphik Semibold";
+  src: url("./assets/fonts/Graphik-Semibold.otf") format("otf"); }
+
+@font-face {
+  font-family: "Graphik Regular";
+  src: url("./assets/fonts/Graphik-Regular.otf") format("otf"); }
+
+@font-face {
+  font-family: "Graphik Light";
+  src: url("./assets/fonts/Graphik-Light.otf") format("otf"); }
+
+@font-face {
+  font-family: "Graphik Medium";
+  src: url("./assets/fonts/Graphik-Medium.otf") format("otf"); }
+
+  * {
+    font-family: 'Graphik Regular', 'arial', sans-serif;
+  }
+
 body{
     font-size: 14px;
   }
@@ -59,23 +79,48 @@ body{
   }
   
   .navbar-custom{
-    background-color: #2240be;
+    background-color: #fff;
     z-index: 999;
-    color: #7C7C7F;
+    color: #7b7b7b;
+    height: 77px;
+    /* padding-right: 0px!important; */
+    padding-left: 0px!important;
    /*  padding-left: 0;
     padding-right: 0; */
   }
+  
+  .profile-menu{
+    left: -40px!important;
+  }
 
+  .bottom-shadow{
+    -webkit-box-shadow: 0 8px 6px -6px #cacaca;
+    -moz-box-shadow: 0 8px 6px -6px #cacaca;
+    box-shadow: 0 8px 6px -6px #cacaca
+  }
   .navbar-custom .nav-link{
-    color: #fff;
+    color: #333;
     font-weight: 500;
+    cursor: pointer;
   }
   .navbar-custom .nav-link:hover{
-    color: #fff;
+    color: #333;
     font-weight: 500;
   }
+
+  .navbar-custom .main-menu{
+    margin: 0 25px;
+  }
   .navbar-brand{
-  color: #fff !important;
+    color: #333333!important;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    text-align: center;
+    background: #F2F2F2;
+    height: 77px;
+    padding: 15px 65px;
+    margin-left: 0px!important;
   }
 
 /* Transparent Overlay */
