@@ -27,47 +27,6 @@
     })(document, window.kommunicate || {});
 </script>
 <script src="https://js.instamojo.com/v1/checkout.js"></script>
-<script>
-  var _paymentFlgs = {
-    isPymentSuccessful : false,
-    isPaymentCancelled: false,
-    paymentResponse:{}
-  }
-      function onOpenHandler () {
-        //alert('Payments Modal is Opened');
-        console.log('Payment modal is getting open');
-      } 
-
-      function onCloseHandler () {
-        alert('Payments Modal is Closed');
-        _paymentFlgs.isPaymentCancelled = true;
-      }
-
-      function onPaymentSuccessHandler (response) {
-        _paymentFlgs.isPymentSuccessful = true;
-        _paymentFlgs.paymentSuccessResponse = response;
-        // console.log('Payment Success Response', response);
-      }
-
-      function onPaymentFailureHandler (response) {
-        _paymentFlgs.isPymentSuccessful = false;
-        _paymentFlgs.paymentResponse = response;
-        console.log('Payment Failure Response', response);
-      }
-      /* End client-defined Callback Handler Functions */
-
-      /* Configuring Handlers */
-      Instamojo.configure({
-        handlers: {
-          onOpen: onOpenHandler,
-          onClose: onCloseHandler,
-          onSuccess: onPaymentSuccessHandler,
-          onFailure: onPaymentFailureHandler
-        }
-      });
-  function onButtonClick() {
-    Instamojo.open('https://test.instamojo.com/@ackamthe');
-  }
 </script>   
 </body>
 </html>

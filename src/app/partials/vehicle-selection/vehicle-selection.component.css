@@ -1,18 +1,19 @@
 .selection-box{
     position: relative;
     background: #fff;
-    min-height: 124px;
+    min-height: 144px;
     box-shadow: 0px 0px 10px -3px;
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 25px;
 }
 
 .selection-box .selection-key{
     display: block;
-    font-weight: 800;
+    font-weight: 600;
     font-style: normal;
-    font-size: 18px;
+    font-size: 17px;
     color: #000000;
 }
 
@@ -35,4 +36,10 @@
 .selection-box .selection-arrow:hover{
     -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+.selection-box .selection-img{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    /* width: 84px; */
 }

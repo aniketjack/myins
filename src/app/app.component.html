@@ -1,7 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-custom bottom-shadow">
   <div class="container-fluid zero-pad">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">weAssure</a>
+      <a class="navbar-brand" href="#">
+         <img src="../assets/images/logo.png" width="184px" alt="WeAssure">
+      </a>
     </div>
     <ul class="nav navbar-nav mr-auto">
       <li class="nav-item main-menu dropdown">
@@ -40,11 +42,11 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Welcome Guest
+            Welcome
           </a>
           <div class="dropdown-menu profile-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item">Account</a>
-            <a class="dropdown-item" onclick="onButtonClick()">Payment</a>
+            <a class="dropdown-item" (click)="doPayment()">Payment</a>
             <a class="dropdown-item">Change Password</a>
             <a class="dropdown-item">Logout</a>
           </div>
@@ -56,10 +58,10 @@
 
 <div class="container-fluid zero-pad main">
   <app-banner></app-banner>
-  <div class="container middle-container">
+  
     <!-- <app-ng7-bootstrap-breadcrumb></app-ng7-bootstrap-breadcrumb> -->
       <router-outlet></router-outlet>
-  </div>
+  
   <!--App Waiting Loader-->
   <div class="waiting-loader-wrapper" *ngIf="showLoader">
     <div class="spinner-border text-danger waiting-loader" role="status">

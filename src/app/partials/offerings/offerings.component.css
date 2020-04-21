@@ -1,5 +1,23 @@
 .offerings-bg{
     background: #F2FEFE;
+    padding-bottom: 54px;
+    position: relative;
+}
+
+.offerings-bg .top-texture, 
+.offerings-bg .bottom-texture{
+    position: absolute;
+    z-index: 0;
+}
+
+.offerings-bg .top-texture{
+    top: 0;
+    right: 0;
+}
+
+.offerings-bg .bottom-texture{
+    bottom: 0;
+    left: 0;
 }
 
 .offerings-card{
@@ -8,6 +26,25 @@
     padding: 15px 15px;
     box-shadow: 0px 0px 10px -3px;
     border-radius: 8px;
-    min-height: 224px;
+    min-height: 300px;
     text-align: center;
+}
+
+.offerings-card .offerings-img{
+    margin-top: 15px;
+}
+
+.offerings-card .offerings-key{
+    display: block;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 17px;
+    color: #000000;
+    margin-top: 15px;
+}
+
+
+.offerings-card .offerings-description{
+    display: block;
+    padding: 15px;
 }
