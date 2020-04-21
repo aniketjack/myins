@@ -10,12 +10,18 @@ import { HomeComponent } from './home/home.component';
 import { Ng7BootstrapBreadcrumbModule } from "ng7-bootstrap-breadcrumb";
 import { ToastrModule } from 'ngx-toastr';
 import { HelpComponent } from './help/help.component';
+import { BannerComponent } from './partials/banner/banner.component';
+import { VehicleSelectionComponent } from './partials/vehicle-selection/vehicle-selection.component';
+import { OfferingsComponent } from './partials/offerings/offerings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HelpComponent
+    HelpComponent,
+    BannerComponent,
+    VehicleSelectionComponent,
+    OfferingsComponent
   ],
   imports: [
     BrowserModule,

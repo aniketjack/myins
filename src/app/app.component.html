@@ -54,10 +54,11 @@
   </div>
 </nav>
 
-<div class="container-fluid">
+<div class="container-fluid zero-pad main">
+  <app-banner></app-banner>
   <div class="container middle-container">
-    <app-ng7-bootstrap-breadcrumb></app-ng7-bootstrap-breadcrumb>
-    <router-outlet></router-outlet>
+    <!-- <app-ng7-bootstrap-breadcrumb></app-ng7-bootstrap-breadcrumb> -->
+      <router-outlet></router-outlet>
   </div>
   <!--App Waiting Loader-->
   <div class="waiting-loader-wrapper" *ngIf="showLoader">

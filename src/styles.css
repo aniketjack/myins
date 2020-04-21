@@ -20,11 +20,15 @@
     font-family: 'Graphik Regular', 'arial', sans-serif;
   }
 
-body{
-    font-size: 14px;
-  }
+  body{
+      font-size: 14px;
+    }
   ul, a{
     font-size: 14px;
+  }
+
+  .main{
+    margin-bottom: 75px;
   }
   
   .zero-pad{
@@ -94,9 +98,9 @@ body{
   }
 
   .bottom-shadow{
-    -webkit-box-shadow: 0 8px 6px -6px #cacaca;
-    -moz-box-shadow: 0 8px 6px -6px #cacaca;
-    box-shadow: 0 8px 6px -6px #cacaca
+    -webkit-box-shadow: 0 8px 6px -6px #656565;
+    -moz-box-shadow: 0 8px 6px -6px #656565;
+    box-shadow: 0 8px 6px -6px #656565
   }
   .navbar-custom .nav-link{
     color: #333;
@@ -176,4 +180,22 @@ body{
     animation: shake .1s linear;
     animation-iteration-count: 3;
     border: 1px solid red;
+  }
+
+  /*Section Prtials*/
+  .section-heading{
+    font-family: 'Graphik Semibold', 'Graphik Regular', 'Graphik', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 28px;
+  }
+
+  .section-subheading{
+    font-family: 'graphik light';
+    font-size: 20px;
+  }
+
+  .text-highlighted{
+    font-weight: 400;
+    font-size: 20px;
   }
