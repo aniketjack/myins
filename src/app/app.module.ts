@@ -13,6 +13,8 @@ import { HelpComponent } from './help/help.component';
 import { BannerComponent } from './partials/banner/banner.component';
 import { VehicleSelectionComponent } from './partials/vehicle-selection/vehicle-selection.component';
 import { OfferingsComponent } from './partials/offerings/offerings.component';
+import { FooterComponent } from './partials/footer/footer.component';
+import { StepsComponent } from './partials/steps/steps.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { OfferingsComponent } from './partials/offerings/offerings.component';
     HelpComponent,
     BannerComponent,
     VehicleSelectionComponent,
-    OfferingsComponent
+    OfferingsComponent,
+    FooterComponent,
+    StepsComponent
   ],
   imports: [
     BrowserModule,
