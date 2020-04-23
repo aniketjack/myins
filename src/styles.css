@@ -1,121 +1,133 @@
 /* You can add global styles to this file, and also import other style files */
 
 @font-face {
-  font-family: "Graphik Semibold";
-  src: url("./assets/fonts/Graphik-Semibold.otf") format("otf"); }
+    font-family: "Graphik Semibold";
+    src: url("./assets/fonts/Graphik-Semibold.otf") format("otf");
+}
 
 @font-face {
-  font-family: "Graphik Regular";
-  src: url("./assets/fonts/Graphik-Regular.otf") format("otf"); }
+    font-family: "Graphik Regular";
+    src: url("./assets/fonts/Graphik-Regular.otf") format("otf");
+}
 
 @font-face {
-  font-family: "Graphik Light";
-  src: url("./assets/fonts/Graphik-Light.otf") format("otf"); }
+    font-family: "Graphik Light";
+    src: url("./assets/fonts/Graphik-Light.otf") format("otf");
+}
 
 @font-face {
-  font-family: "Graphik Medium";
-  src: url("./assets/fonts/Graphik-Medium.otf") format("otf"); }
+    font-family: "Graphik Medium";
+    src: url("./assets/fonts/Graphik-Medium.otf") format("otf");
+}
 
-  * {
+* {
     font-family: 'Graphik Regular', 'arial', sans-serif;
-  }
+}
 
-  body{
-      font-size: 14px;
-    }
-  ul, a{
+body {
     font-size: 14px;
-  }
+}
 
-  .main{
+ul,
+a {
+    font-size: 14px;
+}
+
+.main {
     margin-bottom: 0px;
-  }
-  
-  .zero-pad{
+}
+
+.zero-pad {
     padding-right: 0 !important;
     padding-left: 0 !important;
-  }
-  
-  .zero-mar{
+}
+
+.zero-mar {
     margin-left: 0 !important;
     margin-right: 0 !important;
-  }
-  
-  #toast-container > div {
-    opacity:1;
-  }
-  
-  body{
+}
+
+#toast-container>div {
+    opacity: 1;
+}
+
+body {
     margin: 0;
-  }
-  .menu-wrapper{
-    position: absolute; 
-      /* left: 160px; */
-      /* top: 23%; */
-      /* display: inline-block; */
-      margin-left: 90px;
-      position: relative;
-      margin-top: 4%;
-  
-  }
-  
-  .header{
-      height: 250px;
-      background: #2240be;
-      /* z-index: -20; */
-      /* z-index: 9; */
-      /* position: absolute;*/
-  }
-  
-  .header div.app-title{
+}
+
+.menu-wrapper {
+    position: absolute;
+    /* left: 160px; */
+    /* top: 23%; */
+    /* display: inline-block; */
+    margin-left: 90px;
+    position: relative;
+    margin-top: 4%;
+}
+
+.header {
+    height: 250px;
+    background: #2240be;
+    /* z-index: -20; */
+    /* z-index: 9; */
+    /* position: absolute;*/
+}
+
+.header div.app-title {
     font-size: 28px;
     font-weight: 400;
     position: absolute;
     top: -14px;
     left: 54px;
-  }
+}
 
-  /*Gloabals And Navbar*/
-  select, input{
+
+/*Gloabals And Navbar*/
+
+select,
+input {
     border-radius: 5px !important;
     font-size: 14px !important;
     border: solid 1px;
-  }
-  
-  .navbar-custom{
+}
+
+.navbar-custom {
     background-color: #fff;
     z-index: 999;
     color: #7b7b7b;
     height: 77px;
     /* padding-right: 0px!important; */
     padding-left: 0px!important;
-   /*  padding-left: 0;
+    /*  padding-left: 0;
     padding-right: 0; */
-  }
-  
-  .profile-menu{
-    left: -40px!important;
-  }
+}
 
-  .bottom-shadow{
+.profile-menu {
+    left: -40px!important;
+}
+
+.bottom-shadow {
     -webkit-box-shadow: 0 8px 6px -6px #656565;
     -moz-box-shadow: 0 8px 6px -6px #656565;
     box-shadow: 0 8px 6px -6px #656565
-  }
-  .navbar-custom .nav-link{
+}
+
+.navbar-custom .nav-link {
     color: #333;
     font-weight: 500;
     cursor: pointer;
-  }
-  .navbar-custom .nav-link:hover{
+}
+
+.navbar-custom .nav-link:hover {
     color: #333;
     font-weight: 500;
-  }
+}
 
-  .navbar-custom .main-menu{
+.navbar-custom .main-menu {
     margin: 0 25px;
-  }
-  .navbar-brand{
+}
+
+.navbar-brand {
     color: #333333!important;
     font-weight: 700;
     font-style: normal;
@@ -125,9 +137,11 @@
     height: 77px;
     padding: 5px 45px;
     margin-left: 0px!important;
-  }
+}
+
 
 /* Transparent Overlay */
+
 .waiting-loader-wrapper {
     display: block;
     position: fixed;
@@ -135,11 +149,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 9999999;
-  }
+}
 
-  /*Waiting Loader Css*/
+
+/*Waiting Loader Css*/
+
 .waiting-loader {
     position: fixed;
     z-index: 999;
@@ -151,51 +167,70 @@
     left: 0;
     bottom: 0;
     right: 0;
-  }
-  
-  /*Form Resseter*/
-  textarea:hover, 
-  input:hover, 
-  textarea:active, 
-  input:active, 
-  textarea:focus, 
-  input:focus,
-  button:focus,
-  button:active,
-  button:hover,
-  label:focus,
-  .btn:active,
-  .btn.active
-  {
-      outline:0px !important;
-      -webkit-appearance:none;
-      box-shadow: none !important;
-  }
-  
-  /*Form Error*/
-  
-  
-  .error {
+}
+
+
+/*Form Resseter*/
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+
+/*Form Error*/
+
+.error {
     position: relative;
     animation: shake .1s linear;
     animation-iteration-count: 3;
     border: 1px solid red;
-  }
+}
 
-  /*Section Prtials*/
-  .section-heading{
+
+/*Section Prtials*/
+
+.section-heading {
     font-family: 'Graphik Semibold', 'Graphik Regular', 'Graphik', sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 28px;
-  }
+}
 
-  .section-subheading{
+.section-subheading {
     font-family: 'graphik light';
     font-size: 20px;
-  }
+}
 
-  .text-highlighted{
+.text-highlighted {
     font-weight: 400;
     font-size: 20px;
-  }
+}
+
+
+/*Common cards*/
+
+.box .graph-holder {
+    width: 100%;
+    height: 280px;
+    padding-top: 20px;
+}
+
+.box .box-title {
+    font-weight: 800;
+    color: #094251;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ababab;
+}

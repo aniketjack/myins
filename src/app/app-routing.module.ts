@@ -2,13 +2,15 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { HelpComponent } from './help/help.component';
+import { UserTelematicsComponent } from './user-telematics/user-telematics.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 
 
 const routes: Routes = [
-  { 
-    path: '', 
-    redirectTo: 'home', 
-    pathMatch: 'full' 
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
   },
   {
     path: 'home',
@@ -35,7 +37,33 @@ const routes: Routes = [
             }
           ]
         }
-      }
+      },
+      {
+        path: 'telematics',
+        component: UserTelematicsComponent,
+        data: {
+          title: 'Telematics',
+          breadcrumb: [
+              {
+                label: 'Telematics',
+                url: '/telematics'
+              }
+            ]
+          }
+        },
+        {
+          path: 'dashboard',
+          component: AdminDashboardComponent,
+          data: {
+            title: 'Dashboard',
+            breadcrumb: [
+                {
+                  label: 'Dashboard',
+                  url: '/dashboard'
+                }
+              ]
+            }
+          }
 ];
 
 @NgModule({

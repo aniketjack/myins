@@ -7,7 +7,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { Ng7BootstrapBreadcrumbModule } from "ng7-bootstrap-breadcrumb";
+// import { Ng7BootstrapBreadcrumbModule } from "ng7-bootstrap-breadcrumb";
 import { ToastrModule } from 'ngx-toastr';
 import { HelpComponent } from './help/help.component';
 import { BannerComponent } from './partials/banner/banner.component';
@@ -15,6 +15,10 @@ import { VehicleSelectionComponent } from './partials/vehicle-selection/vehicle-
 import { OfferingsComponent } from './partials/offerings/offerings.component';
 import { FooterComponent } from './partials/footer/footer.component';
 import { StepsComponent } from './partials/steps/steps.component';
+import { UserTelematicsComponent } from './user-telematics/user-telematics.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,9 @@ import { StepsComponent } from './partials/steps/steps.component';
     VehicleSelectionComponent,
     OfferingsComponent,
     FooterComponent,
-    StepsComponent
+    StepsComponent,
+    UserTelematicsComponent,
+    AdminDashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +40,7 @@ import { StepsComponent } from './partials/steps/steps.component';
     ReactiveFormsModule,
     HttpClientModule,
     AppRoutingModule,
-    Ng7BootstrapBreadcrumbModule,
+    // Ng7BootstrapBreadcrumbModule,
     ToastrModule.forRoot({
       timeOut: 3000,
      // toastComponent: CustomToastComponent,
@@ -45,6 +51,7 @@ import { StepsComponent } from './partials/steps/steps.component';
       disableTimeOut: false,
       tapToDismiss: true
    }),
+   NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

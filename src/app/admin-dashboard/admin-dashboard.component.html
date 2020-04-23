@@ -1,0 +1,41 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm mt-5 mb-5">
+                    <div class="dashboard-title">
+                        Data Insight <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm mt-4 mb-4">
+                    <ngx-charts-number-card [view]="view" [scheme]="colorScheme" [results]="stat" [cardColor]="cardColor">
+                    </ngx-charts-number-card>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm mt-5 mb-3">
+                    <div class="box">
+                        <div class="box-title">Monthly Sale</div>
+                        <div class="graph-holder">
+                            <ngx-charts-line-chart [view]="view" [scheme]="colorScheme" [legend]="legend" [legendTitle]="legendTitle" [legendPosition]="legendPosition" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis" [xAxisLabel]="xAxisLabel"
+                                [yAxisLabel]="yAxisLabel" [timeline]="timeline" [results]="multi">
+                            </ngx-charts-line-chart>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm mt-5 mb-3">
+                    <div class="box">
+                        <div class="box-title">Monthly Sale</div>
+                        <div class="graph-holder">
+                            <ngx-charts-polar-chart [view]="view" [scheme]="colorScheme" [legend]="legend" [legendTitle]="legendTitle" [legendPosition]="legendPosition" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis" [xAxisLabel]="xAxisLabel"
+                                [yAxisLabel]="yAxisLabel" [results]="multi">
+                            </ngx-charts-polar-chart>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
